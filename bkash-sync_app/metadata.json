@@ -1,0 +1,6 @@
+{
+  "name": "bKash Sync 2.0",
+  "description": "bKash SMS monitors real-time transactions, stores them offline-first database, and syncs automatically with custom backend APIs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

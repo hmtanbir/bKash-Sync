@@ -1,0 +1,16 @@
+{
+  "name": "bkash-sync-worker",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240101.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^4.86.0"
+  },
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev",
+    "db:init": "wrangler d1 execute bkash-sync-db --local --file=./schema.sql",
+    "db:deploy": "wrangler d1 execute bkash-sync-db --remote --file=./schema.sql"
+  }
+}

@@ -1,0 +1,30 @@
+bkash-sync_app.zip
+test_stuff/
+node_modules
+.wrangler
+.env
+node_modules/
+# Additional exclusions for public repo
+.build-outputs/
+debug.keystore.base64
+
+# Gradle / Android build artifacts
+.gradle/
+**/build/
+*.jks
+*.keystore
+local.properties
+.kotlin/
+.commandcode
+.vscode
+# IDE
+.idea/
+*.iml
+bKash Sync 2.0_1.0.apk
+RELEASE.md
+# Test outputs
+captures/
+
+# Built packages
+*.apk
+*.aab
