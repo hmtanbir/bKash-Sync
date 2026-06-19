@@ -1,0 +1,13 @@
+# Wrangler / Cloudflare Worker files
+.wrangler/
+.dev.vars
+
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
