@@ -1,0 +1,4 @@
+# Secret Key required to access the admin endpoints of the Cloudflare Worker.
+# Do NOT commit your actual '.dev.vars' file with the real secrets.
+# Copy this file to '.dev.vars' and replace the value with your secure key.
+ADMIN_API_KEY=
