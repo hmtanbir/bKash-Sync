@@ -28,8 +28,24 @@ In production, do not upload `.dev.vars`. Instead, bind the secret securely usin
 npx wrangler secret put ADMIN_API_KEY
 ```
 
+### Wrangler Configuration (`wrangler.toml`)
+
+The Worker's routing, metadata, and D1 database bindings are configured in `wrangler.toml`. A template is provided in `wrangler.toml.example`.
+
+1. Copy the example configuration to create your active configuration:
+   ```bash
+   cp wrangler.toml.example wrangler.toml
+   ```
+2. Open `wrangler.toml` and configure your Cloudflare D1 Database binding under the `[[d1_databases]]` section:
+   * **`database_name`**: The name of the D1 database you created in Cloudflare (e.g., `bkash-sync-db`).
+   * **`database_id`**: The UUID of your created database.
+
+> [!WARNING]
+> Do not commit your active `wrangler.toml` containing your specific database ID if you wish to keep it private. It is already added to `.gitignore`.
+
 ---
 
 ## Documentation
 
-For full API documentation, refer to the [api_document.md](https://github.com/hmtanbir/bKash-Sync/blob/main/server/cloudflare-server/api_document.md) file.
+For full API documentation, refer to the [api_document.md](https://github.com/zenjahid/bKash-Sync/blob/main/server/cloudflare-server/api_document.md) file.
+
