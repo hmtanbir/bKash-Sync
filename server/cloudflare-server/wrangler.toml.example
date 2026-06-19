@@ -1,14 +1,14 @@
 name = "bkash-sync-cloudflare-server"
 main = "src/index.ts"
-compatibility_date = "2026-05-28"
+compatibility_date = "2026-05-25"
 
 # Environment Variables
 [vars]
 # Note: You can define non-sensitive keys here, but set your ADMIN_API_KEY as a "secret" instead 
 # (via `wrangler secret put ADMIN_API_KEY` on production)
-# ADMIN_API_KEY=a1b90d16cafd46fce0d7264893fe912f46e6b5c35cea28d77db894047e89b928
+
 # Binding the Cloudflare D1 SQL Database to our Worker environment
 [[d1_databases]]
-binding = "bkash_sync_db"
-database_name = "bkash-sync-db"
-database_id = "88760dd4-dbe3-4073-b2f1-302742df9967"
+binding = "DB"                          # Used in code as env.DB
+database_name = "bkash-sync-db"         # Your D1 database name in Cloudflare
+database_id = "xxxxxxxx"     # Replace with your actual created D1 database UUID
